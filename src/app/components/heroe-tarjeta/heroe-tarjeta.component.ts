@@ -18,7 +18,8 @@ export class HeroeTarjetaComponent implements OnInit {
   }
 
   verHeroe(idx:number){
-    this.heroeSeleccionado.emit(this.idx)
+    // this.heroeSeleccionado.emit(this.idx)
+    this.router.navigate(['/heroe',this.idx]);
   };
 
 }
